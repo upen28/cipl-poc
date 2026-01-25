@@ -41,7 +41,7 @@ Google-Search
   SeleniumLibrary.Press Keys  name=q  ${ENTER}
   Capture Page Screenshot  ${full_path_screen_capture_directory}\\Goo_Sea_003.png
 
-  Sleep  2
+  Sleep  10
   Mainframe3270.Page Should Contain String  Selenium
   
   Log  STOP_PUSHING_INTO_REPORT
@@ -61,7 +61,4 @@ Google-Search
   Remove File  ${full_path_screen_capture_directory}\\${file}
   Log  START_PUSHING_INTO_REPORT
 
-
-  Capture Page Screenshot  ${full_path_screen_capture_directory}\\Goo_Sea_005.png
-  SeleniumLibrary.Close Browser
 
