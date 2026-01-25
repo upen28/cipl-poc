@@ -25,7 +25,7 @@ Google-Search
 
 
   log  LOGICAL_NAME=url_google
-  SeleniumLibrary.Open Browser  https://www.google.com chrome
+  SeleniumLibrary.Open Browser  https://www.google.com edge
   Capture Page Screenshot  ${full_path_screen_capture_directory}\\Goo_Sea_001.png
 
   Log  STOP_PUSHING_INTO_REPORT
