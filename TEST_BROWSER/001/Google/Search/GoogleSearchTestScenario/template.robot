@@ -33,12 +33,12 @@ Google-Search
   Log  START_PUSHING_INTO_REPORT
 
   log  LOGICAL_NAME=txt_search
-  SeleniumLibrary.Input Text  name=q  ${Selenium}
+  SeleniumLibrary.Input Text  name=q  ${"Selenium"}
   Capture Page Screenshot  ${full_path_screen_capture_directory}\\Goo_Sea_002.png
 
 
   log  LOGICAL_NAME=txt_search
-  SeleniumLibrary.Press Keys  name=q  ${ENTER}
+  SeleniumLibrary.Press Keys  name=q  ${"ENTER"}
   Capture Page Screenshot  ${full_path_screen_capture_directory}\\Goo_Sea_003.png
 
   Sleep  10
