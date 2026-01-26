@@ -1,6 +1,5 @@
 *** Settings ***
 Library   SeleniumLibrary
-Library   Mainframe3270
 Library   OperatingSystem
 
 
@@ -42,23 +41,4 @@ Google-Search
   Capture Page Screenshot  ${full_path_screen_capture_directory}\\Goo_Sea_003.png
 
   Sleep  10
-  Mainframe3270.Page Should Contain String  Selenium
-  
-  Log  STOP_PUSHING_INTO_REPORT
-  Mainframe3270.Set Screenshot Folder  ${full_path_screen_capture_directory}
-  Take Screenshot  filename_prefix=Goo_Sea_004
-  ${files}    List Files In Directory    ${full_path_screen_capture_directory}  Goo_Sea_004*.html
-  ${newFile}  Set Variable  tempFile
-  FOR    ${file}    IN    @{files}
-  ${newFile}  Set Variable  ${file}
-  END
-  Open Browser  ${full_path_screen_capture_directory}\\${file}  edge
-  Set Window Size  725  520
-  Log  START_PUSHING_INTO_REPORT
-  Capture Page Screenshot  ${full_path_screen_capture_directory}\\Goo_Sea_004.png
-  Log  STOP_PUSHING_INTO_REPORT
-  Close Browser
-  Remove File  ${full_path_screen_capture_directory}\\${file}
-  Log  START_PUSHING_INTO_REPORT
-
 
