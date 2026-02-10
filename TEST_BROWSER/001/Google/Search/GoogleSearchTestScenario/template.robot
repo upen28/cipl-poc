@@ -1,6 +1,8 @@
 *** Settings ***
-Library   SeleniumLibrary
+Library   RPA.Windows
+Library   RPA.Desktop
 Library   OperatingSystem
+Library   SeleniumLibrary
 
 
 *** Variables ***
@@ -41,4 +43,7 @@ Google-Search
   Capture Page Screenshot  ${full_path_screen_capture_directory}\\Goo_Sea_003.png
 
   Sleep  10
+  RPA.Windows.Click
+  RPA.Desktop.Take Screenshot  ${full_path_screen_capture_directory}\\Goo_Sea_004.png
+
 
