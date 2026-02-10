@@ -34,13 +34,11 @@ WIN-CALC
   RPA.Windows.Control Window  Calculator
   RPA.Desktop.Take Screenshot  ${full_path_screen_capture_directory}\\WIN_CAL_002.png
 
-  RPA.Windows.Screenshot  screen_captures/calc_001.png
 
   log  LOGICAL_NAME=btn_five
   RPA.Windows.Click  name:Five
   RPA.Desktop.Take Screenshot  ${full_path_screen_capture_directory}\\WIN_CAL_003.png
 
-  RPA.Windows.Screenshot  screen_captures/calc_002.png
 
   log  LOGICAL_NAME=btn_plus
   RPA.Windows.Click  name:Plus
@@ -51,12 +49,10 @@ WIN-CALC
   RPA.Windows.Click  name:Three
   RPA.Desktop.Take Screenshot  ${full_path_screen_capture_directory}\\WIN_CAL_005.png
 
-  RPA.Windows.Screenshot  screen_captures/calc_003.png
 
   log  LOGICAL_NAME=btn_equals
   RPA.Windows.Click  name:Equals
   RPA.Desktop.Take Screenshot  ${full_path_screen_capture_directory}\\WIN_CAL_006.png
 
-  RPA.Windows.Screenshot  screen_captures/calc_004.png
   RPA.Windows.Close Current Window
 
